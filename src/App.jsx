@@ -3,18 +3,20 @@ import './App.scss'
 
 function App() {
   return (
-    <div className='App'>
-      <header className='App-header'>
+    <div className='app'>
+      <header className='app-header'>
         <p>Aqui estaran nuestros componentes</p>
+      </header>
+      <footer className='app-footer'>
         <a
-          className='App-link'
+          className='link'
           href='https://github.com/icao/pruebas-unitarias-integracion-react'
           target='_blank'
           rel='noopener noreferrer'
         >
           Repositorio de pruebas unitarias e integracion en React.js
         </a>
-      </header>
+      </footer>
     </div>
   )
 }
