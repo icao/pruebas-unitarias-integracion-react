@@ -1,13 +1,11 @@
 import React from 'react'
-import './App.css'
+import './App.scss'
 
 function App() {
   return (
     <div className='App'>
       <header className='App-header'>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <p>Aqui estaran nuestros componentes</p>
         <a
           className='App-link'
           href='https://github.com/icao/pruebas-unitarias-integracion-react'
