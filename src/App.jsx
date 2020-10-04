@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.scss'
-import MiPrimerTest from './components/01-mi-primer-test/MiPrimerTest'
+import MiPrimerComponenteTest from './components/01-mi-primer-test/MiPrimerComponenteTest'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         </h1>
       </header>
       <main className='app-main'>
-        <MiPrimerTest />
+        <MiPrimerComponenteTest />
       </main>
 
       <footer className='app-footer'>
