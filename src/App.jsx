@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.scss'
-import MiPrimerComponenteTest from './components/01-mi-primer-test/MiPrimerComponenteTest'
+import MiPrimerComponenteTest from './components/01-mi-primer-componente-test/MiPrimerComponenteTest'
 
 function App() {
   return (
