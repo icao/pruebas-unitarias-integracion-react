@@ -24,7 +24,8 @@ const MiPrimerComponenteTest = () => {
           </ul>
         </li>
         <li>
-          <strong>00-funciones-test | </strong>
+          <strong>02-funciones-test | </strong> Uso del método{' '}
+          <strong>toEqual()</strong>
         </li>
       </ul>
     </>
