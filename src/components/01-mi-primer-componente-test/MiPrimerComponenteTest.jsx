@@ -3,18 +3,29 @@ import React from 'react'
 const MiPrimerComponenteTest = () => {
   return (
     <>
-      <h2>Este es mi primer test</h2>
-      <p>Revisar los test en _test_</p>
+      <h2>Fundamentos de pruebas unitarias</h2>
       <p>
-        <strong>NOTA: </strong>Se estan haciendo pruebas unitarias de la carpeta{' '}
-        <strong>base</strong>
+        <strong>Nota:</strong> Revisar los test en el directorio{' '}
+        <strong>_tests_</strong>
       </p>
       <ul>
         <li>
-          MiPrimerTest: <strong>test()</strong>, <strong>exppect()</strong>,
-          <strong>toBe()</strong>
+          <strong>00-primer-test | </strong> Uso de los métodos básicos:
+          <ul>
+            <li>
+              <strong>test()</strong>
+            </li>
+            <li>
+              <strong>exppect()</strong>
+            </li>
+            <li>
+              <strong>toBe()</strong>
+            </li>
+          </ul>
         </li>
-        <li></li>
+        <li>
+          <strong>00-funciones-test | </strong>
+        </li>
       </ul>
     </>
   )
