@@ -3,15 +3,13 @@
 @import './scss/Fonts';
 
 .app {
-  text-align: center;
   &-header {
     width: 100%;
     background-color: $color-primary;
-    // position: absolute;
-    // top: 0;
-    padding: 0.2em;
+    position: sticky;
+    top: 0;
+    padding: 0.5em;
     color: $color-white;
-    font-size: calc(10px + 2vmin);
   }
   &-main {
     padding: 0.7em;
@@ -19,11 +17,8 @@
     background-color: $color-primary;
     min-height: 100vh;
     height: auto;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
     color: $color-white;
+    @extend %full-center;
   }
   &-footer {
     width: 100%;
@@ -31,6 +26,7 @@
     bottom: 0;
     padding: 0.5em;
     font-size: calc(8px + 1vmin);
+    text-align: center;
 
     &__bg-link {
       display: inline-block;
@@ -43,6 +39,8 @@
 
 .title {
   font-size: calc(20px + 2vmin);
+  text-align: center;
+  margin: 0;
 }
 
 .link {
