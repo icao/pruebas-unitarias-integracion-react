@@ -10,7 +10,7 @@ const MiPrimerComponenteTest = () => {
       </p>
       <ul>
         <li>
-          <strong>00-primer-test | </strong> Uso de los métodos básicos:
+          |<strong>00-primer-test | </strong> Uso de los métodos básicos:
           <ul>
             <li>
               <strong>test()</strong>
@@ -22,6 +22,10 @@ const MiPrimerComponenteTest = () => {
               <strong>toBe()</strong>
             </li>
           </ul>
+        </li>
+        <li>
+          <strong>01-template-string-test | </strong> Uso del método{' '}
+          <strong>toBe()</strong> y <strong>describe()</strong>
         </li>
         <li>
           <strong>02-funciones-test | </strong> Uso del método{' '}
