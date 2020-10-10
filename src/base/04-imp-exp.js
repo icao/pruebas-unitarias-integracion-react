@@ -10,7 +10,7 @@ const getHeroById = id => {
   return heroes.find(heroe => heroe.id === id)
 }
 
-console.log('HEROE -> ', getHeroById(1))
+// console.log('HEROE -> ', getHeroById(1))
 
 /**
  * Esta funcion regresa heroes que pertenecen a un mismo propietario
@@ -18,8 +18,8 @@ console.log('HEROE -> ', getHeroById(1))
  * @param {*} owner
  * @returns
  */
-const getHeroByOwner = owner => {
+export const getHeroByOwner = owner => {
   return heroes.filter(hero => hero.owner === owner)
 }
 
-console.log('HEORES -> ', getHeroByOwner('Marvel'))
+// console.log('HEORES -> ', getHeroByOwner('Marvel'))

@@ -35,6 +35,10 @@ const MiPrimerComponenteTest = () => {
           <strong>03-destructuracion-arreglos-test | </strong> Prueba con varios
           métodos para testear un arreglo.
         </li>
+        <li>
+          <strong>04-imp-exp-test.test,js | </strong> Prueba con varios métodos
+          para testear una función con método find() y filter().
+        </li>
       </ul>
     </>
   )
