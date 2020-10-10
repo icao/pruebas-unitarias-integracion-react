@@ -10,7 +10,7 @@ const MiPrimerComponenteTest = () => {
       </p>
       <ul>
         <li>
-          |<strong>00-primer-test | </strong> Uso de los métodos básicos:
+          <strong>00-primer-test | </strong> Uso de los métodos básicos:
           <ul>
             <li>
               <strong>test()</strong>
@@ -30,6 +30,10 @@ const MiPrimerComponenteTest = () => {
         <li>
           <strong>02-funciones-test | </strong> Uso del método{' '}
           <strong>toEqual()</strong>
+        </li>
+        <li>
+          <strong>03-destructuracion-arreglos-test | </strong> Prueba con varios
+          métodos para testear un arreglo.
         </li>
       </ul>
     </>

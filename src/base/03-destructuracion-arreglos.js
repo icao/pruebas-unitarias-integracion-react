@@ -1,12 +1,12 @@
 const frutas = ['manzana', 'pera', 'sandia', 'toronja']
 const [, , , fruta4] = frutas
 
-console.log(`Me gusta la ${fruta4}`)
+// console.log(`Me gusta la ${fruta4}`)
 
-const regresaArreglo = () => ['Alexander', 20]
+export const regresarArreglo = () => ['Alexander', 20]
 
-console.log(`Datos del usuario ${regresaArreglo()}`)
+// console.log(`Datos del usuario ${regresarArreglo()}`)
 
-const [usuario, edad] = regresaArreglo()
+const [usuario, edad] = regresarArreglo()
 
-console.log(`El usuario es: ${usuario} y su edad es: ${edad}`)
+// console.log(`El usuario es: ${usuario} y su edad es: ${edad}`)
