@@ -20,6 +20,17 @@ describe('Pruebas en 04-imp-exp', () => {
 
     expect(heroe).toBe(undefined) // [1]
   })
+
+  test('getHeroByOwner debe retornar un arreglo con heroes de DC', () => {
+    const owner = 'DC'
+    const heroesDc = getHeroByOwner(owner)
+    const heroesDcData = heroes.filter(h => h.owner === owner)
+
+    console.log('heroes DC ', heroesDc)
+    console.log('heroes DC Data', heroesDcData)
+
+    expect(heroesDc).toEqual(heroesDcData)
+  })
 })
 
 /**
