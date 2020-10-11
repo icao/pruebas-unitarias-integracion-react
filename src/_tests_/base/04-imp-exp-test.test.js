@@ -11,4 +11,17 @@ describe('Pruebas en 04-imp-exp', () => {
     console.log('heroe data existente: ', heroeData)
     expect(heroe).toBe(heroeData)
   })
+
+  test('getHeroById debe retornar undefined si heroe no existe', () => {
+    const id = 100
+    const heroe = getHeroById(id)
+
+    console.log('heroe obtenido: ', heroe)
+
+    expect(heroe).toBe(undefined) // [1]
+  })
 })
+
+/**
+ * [1] - Hacemos uso de toBe() porque 'undefined' es un primitivo
+ */
