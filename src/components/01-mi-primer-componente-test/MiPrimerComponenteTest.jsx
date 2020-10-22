@@ -39,6 +39,9 @@ const MiPrimerComponenteTest = () => {
           <strong>04-imp-exp-test.test,js | </strong> Prueba con varios métodos
           para testear una función con método find() y filter().
         </li>
+        <li>
+          <strong>05-promesas-test.test,js | </strong> Prueba de promesas
+        </li>
       </ul>
     </>
   )
