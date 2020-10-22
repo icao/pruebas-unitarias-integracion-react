@@ -1,15 +1,16 @@
 import { getHeroById } from './04-imp-exp'
 
-const obtenerHeroe = id => {
+export const obtenerHeroe = id => {
   return new Promise((resolve, reject) => {
-    let heroe = getHeroById(id)
-
-    if (heroe) {
-      resolve(heroe)
-    } else {
-      reject('No existe ese heroe')
-    }
+    setTimeout(() => {
+      const heroe = getHeroById(id)
+      if (heroe) {
+        resolve(heroe)
+      } else {
+        reject('Error no se pudo encontrar el heroe')
+      }
+    }, 1500)
   })
 }
 
-obtenerHeroe(1).then(response => console.log(response))
+// obtenerHeroe(10).then(response => console.log(response))
