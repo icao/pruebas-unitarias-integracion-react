@@ -1,12 +1,12 @@
 import heroes from '../data/heroes'
 
-export /**
+/**
  * Esta funcion regresa a un heroe buscado por su id
  *
  * @param {*} id
  * @returns
  */
-const getHeroById = id => {
+export const getHeroById = id => {
   return heroes.find(heroe => heroe.id === id)
 }
 
