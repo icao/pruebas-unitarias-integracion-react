@@ -1,14 +1,14 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './App.scss'
 import MiPrimerComponenteTest from './components/01-mi-primer-componente-test/MiPrimerComponenteTest'
 
-function App() {
+function App({ title, subtitle }) {
   return (
     <div className='app'>
       <header className='app-header'>
-        <h1 className='title'>
-          Pruebas unitarias y de integración en react.js
-        </h1>
+        <h1 className='title'>{title}</h1>
+        <h2 className='subtitle'>{subtitle}</h2>
       </header>
       <main className='app-main'>
         <MiPrimerComponenteTest />
@@ -28,6 +28,14 @@ function App() {
       </footer>
     </div>
   )
+}
+
+App.propTypes = {
+  title: PropTypes.string.isRequired,
+}
+
+App.defaultProps = {
+  subtitle: 'Jest & Enzime',
 }
 
 export default App

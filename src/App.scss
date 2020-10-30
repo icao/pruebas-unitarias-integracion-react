@@ -43,10 +43,21 @@
   margin: 0;
 }
 
+.subtitle {
+  font-size: calc(16px + 2vmin);
+  text-align: center;
+  margin: 0;
+  color: $color-cyan;
+}
+
 .link {
-  color: #00d9ff;
+  color: $color-cyan;
 }
 
 .test-method {
-  color: #00d9ff;
+  color: $color-cyan;
+}
+
+.name-component {
+  color: $color-palegreen;
 }
