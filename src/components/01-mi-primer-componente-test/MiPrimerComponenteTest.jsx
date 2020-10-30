@@ -45,6 +45,12 @@ const MiPrimerComponenteTest = () => {
           promesas(asincronia) y uso del método{' '}
           <strong className='test-method'>done()</strong>
         </li>
+        <li>
+          <strong>05-async-await-test.test | </strong> Prueba de función
+          asincronia y uso de función
+          <strong className='test-method'> async/await</strong> en el método
+          test()
+        </li>
       </ul>
     </>
   )
