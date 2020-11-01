@@ -60,7 +60,7 @@ const MiPrimerComponenteTest = () => {
       <ul>
         <li>
           <strong>
-            <span className='name-component'>{`<App />`}</span>
+            App.test-jsx <span className='name-component'>{`<App />`}</span>{' '}
           </strong>{' '}
           ⇨ Prueba de la renderización de un componente. <br /> Uso de el método{' '}
           <i className='test-method'>render()</i> y{' '}
