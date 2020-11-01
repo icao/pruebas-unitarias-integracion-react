@@ -14,13 +14,13 @@ describe('Probando componente <App />', () => {
  * Probando la renderización de un componente de React
  *
  * [1] - Primero tenemos que importar nuestro componente
- * import React from 'react'    - Importamo React, yabque hacemos uso de nuesto componente
+ * import React from 'react'    - Importamo React, ya que hacemos uso de nuesto componente
  * import App from '../App'   - Importando el componente
  * import { render } from '@testing-library/react' - Importamos el método "render()" desde la "testing library"
  *
  * Guardamos en una variable lo que regrese el método render([componente])
  *
- * [2] - Harémos uso de la "testing library" de React para testear nuestro componentey obtener valores de nuestro componente.
+ * [2] - Harémos uso de la "testing library" de React para testear nuestro componente y obtener algunos valores.
  * Usamos el método getByText([texto_a_buscar]), que recibe como parámetro el texto que queremos buscar dentro del componente.
  *
  * Y con el método toBeInTheDocument() de Jest, comparamos si el texto(wrapper) coincide con alguno dentro del componente.
@@ -28,7 +28,7 @@ describe('Probando componente <App />', () => {
  */
 
 /**
- * IMPORTANTE: Para que Jest pueda hacer uso de este método getByText(), tenemos que configurar un archivo para que JEst pueda hacer uso de una libreria que necesita para acceder a nuestro dom.
+ * IMPORTANTE: Para que Jest pueda hacer uso de este método getByText(), tenemos que configurar un archivo para que Jest pueda hacer uso de una libreria que necesita para acceder a nuestro DOM.
  *
  * En la carpeta "src", creamos un archivo de configuración que llamaremos: setupTest.js
  * E importaremos  a jest-dom de la siguiente manera:
