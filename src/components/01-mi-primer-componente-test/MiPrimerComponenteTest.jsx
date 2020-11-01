@@ -33,7 +33,7 @@ const MiPrimerComponenteTest = () => {
           <strong className='test-method'>toEqual()</strong>
         </li>
         <li>
-          <strong>03-destructuracion-arreglos-test ⇨ </strong> Prueba con varios
+          <strong>03-destructuración-arreglos-test ⇨ </strong> Prueba con varios
           métodos para testear un arreglo.
         </li>
         <li>
@@ -62,7 +62,12 @@ const MiPrimerComponenteTest = () => {
           <strong>
             <span className='name-component'>{`<App />`}</span>
           </strong>{' '}
-          ⇨ Prueba sobre la renderización del componente
+          ⇨ Prueba de la renderización de un componente. <br /> Uso de el método{' '}
+          <i className='test-method'>render()</i> y{' '}
+          <i className='test-method'>getByText()</i> del testing-library de
+          react. Asi como{' '}
+          <strong className='test-method'>toBeInTheDocument()</strong> de Jest
+          DOM
         </li>
       </ul>
     </>
