@@ -46,7 +46,8 @@ describe('Probando componente <App /> con React Testing Library', () => {
  */
 
 describe('Probando componente <App /> con Enzyme', () => {
-  test('App debe mostrar un titulo: Pruebas unitarias y de integración - React', () => {
-    console.log('ENZYME')
+  test('App debe mostrarse correctamente', () => {
+    let titulo = 'Pruebas unitarias y de integración - React'
+    let wrapper = shallow(<App />)
   })
 })
