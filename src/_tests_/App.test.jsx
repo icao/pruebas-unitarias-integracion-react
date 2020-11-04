@@ -51,19 +51,22 @@ describe('Probando componente <App /> con Enzyme', () => {
     let titulo = 'Pruebas unitarias y de integración - React'
     let wrapper = shallow(<App title={titulo} />) // [1]
 
-    // se espera que el componente coincida con el snapshot(foto) del compoentne <App />
+    // se espera que el componente obtenido en wrapper coincida con el snapshot(foto) más reciente del componente <App />
     expect(wrapper).toMatchSnapshot() //[2]
   })
 })
 
 /**
- * [1] - shallow en enzyme es el sustituto del método render()
+ * Importamos el método shallow desde:
+ * import { shallow } from 'enzyme'
+ *
+ * [1] - shallow(): En enzyme es el sustituto del método render()
  * Es útil para limitarse a probar un componente como una unidad y para asegurarse de que sus pruebas no afirmen indirectamente el comportamiento de los componentes secundarios, es decir, que nos proporcione el componente sin la interferencia de sus hijos(componentes anidados)
  *
  *
- * [2] - Es un método que garantiza que un valor coincida con la instantánea(snapshot) más reciente.
+ * [2] - toMatchSnapshot(): Es un método que garantiza que un valor coincida con la instantánea(snapshot) más reciente.
  *
- * El snapshot es una fotografia reciente de nuestro componente y se aloja en la carpeta de _snapshots_
+ * Snapshot: El snapshot es una fotografía reciente de nuestro componente y se aloja en la carpeta de _snapshots_
  *
  * Lo que hacemos nuestro test es comparar el componente capturado con shallow y esperamos que sea igual al snapshot mas actual del componente App, esto atravez del método toMatchSnapshot() de enzyme
  */
