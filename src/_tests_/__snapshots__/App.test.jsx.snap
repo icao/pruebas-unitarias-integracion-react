@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Probando componente <App /> con Enzyme App debe mostrarse correctamente 1`] = `
+<div
+  className="app"
+>
+  <header
+    className="app-header"
+  >
+    <h1
+      className="title"
+    >
+      Pruebas unitarias y de integración - React
+    </h1>
+    <h2
+      className="subtitle"
+    >
+      Jest & Enzime
+    </h2>
+  </header>
+  <main
+    className="app-main"
+  >
+    <MiPrimerComponenteTest />
+  </main>
+  <footer
+    className="app-footer"
+  >
+    <span
+      className="app-footer__bg-link"
+    >
+      <a
+        className="link"
+        href="https://github.com/icao/pruebas-unitarias-integracion-react"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Repositorio de pruebas unitarias e integracion en React.js
+      </a>
+    </span>
+  </footer>
+</div>
+`;
