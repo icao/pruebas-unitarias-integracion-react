@@ -2,7 +2,10 @@ import React from 'react'
 import { render } from '@testing-library/react'
 import App from '../App'
 
-describe('Probando componente <App />', () => {
+/**
+ * Prueba con REACT Testing Library
+ */
+describe('Probando componente <App /> con React Testing Library', () => {
   test('App debe mostrar un titulo: Pruebas unitarias y de integración - React', () => {
     let titulo = 'Pruebas unitarias y de integración - React'
     const wrapper = render(<App title={titulo} />) // [1]
@@ -37,3 +40,13 @@ describe('Probando componente <App />', () => {
  * Una vez hecho, requeriremos volver a levantar nuestras pruebas con yarn test, para cargar las configuraciones realizadas.
  *
  */
+
+/**
+ * Prueba con ENZYME
+ */
+
+describe('Probando componente <App /> con Enzyme', () => {
+  test('App debe mostrar un titulo: Pruebas unitarias y de integración - React', () => {
+    console.log('ENZYME')
+  })
+})
