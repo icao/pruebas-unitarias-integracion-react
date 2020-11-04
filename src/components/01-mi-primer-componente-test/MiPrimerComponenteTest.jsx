@@ -62,12 +62,20 @@ const MiPrimerComponenteTest = () => {
           <strong>
             App.test.jsx <span className='name-component'>{`<App />`}</span>{' '}
           </strong>{' '}
-          ⇨ Prueba de la renderización de un componente. <br /> Uso de el método{' '}
-          <i className='test-method'>render()</i> y{' '}
+          ⇨ Prueba de la renderización de un componente con React & Jest
+          <br /> Uso de el método <i className='test-method'>render()</i> y{' '}
           <i className='test-method'>getByText()</i> del testing-library de
           react. Asi como{' '}
           <strong className='test-method'>toBeInTheDocument()</strong> de Jest
           DOM
+        </li>
+        <li>
+          <strong>
+            App.test.jsx <span className='name-component'>{`<App />`}</span>{' '}
+          </strong>{' '}
+          ⇨ Prueba de la renderización de un componente con Enzyme. <br /> Uso
+          de el método <strong className='test-method-enzyme'>shallow()</strong>{' '}
+          y <strong className='test-method-enzyme'>toMatchSnapshot()</strong>
         </li>
       </ul>
     </>
