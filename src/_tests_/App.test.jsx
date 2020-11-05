@@ -70,3 +70,46 @@ describe('Probando componente <App /> con Enzyme', () => {
  *
  * Lo que hacemos nuestro test es comparar el componente capturado con shallow y esperamos que sea igual al snapshot mas actual del componente App, esto atravez del método toMatchSnapshot() de enzyme
  */
+
+describe('Probando componente <App /> con Enzyme', () => {
+  test('App debe mostrar el titulo enviado en las props', () => {
+    let titulo = 'Pruebas unitarias y de integración - React'
+    let wrapper = shallow(<App title={titulo} />)
+
+    // Obtenemos el texto del titulo dentro del componente
+    let texto = wrapper.find('h1').text() // [1]
+    // Experamos que el titulo obtenido del componente sea igual al titulo
+    expect(texto).toBe(titulo)
+  })
+
+  test('App debe mostrar el subtitulo enviado en las props', () => {
+    let titulo = 'Pruebas unitarias y de integración - React'
+    let subtitulo = 'Jest & Enzime'
+    let wrapper = shallow(<App title={titulo} subtitle={subtitulo} />)
+
+    let texto = wrapper.find('h2').text()
+    // Experamos que el subtitulo obtenido del componente sea igual al subtitulo esperado
+    expect(texto).toBe(subtitulo)
+  })
+})
+
+/**
+ * ACEDIENDO AL COMPONENTE
+ *
+ * Para acceder a los elementos del componente Enzyme nos provee de un método find() para extraer elementos en especifico
+ *
+ * find([argumento])
+ *
+ * [argumento] : Elemento que se desea buscar, puede ser un tag, identificador o clase.
+ * Tiene una forma similar de trabajar como el método querySelector() de JS
+ *
+ * Esto a su vez nos brinda una série de métodos para extraer los parámetros del elemento.
+ * En nuestro caso de prueba hacemos necesidad del texto del subtitulo, por ello usamos el método text(), que nos brinda el texto dentro de la etiqueta h2.
+ *
+ * En nuestro ejemplo extraemos el texto que renderiza el componente:
+ *
+ * let texto = wrapper.find('h2').text()
+ *
+ * Y hacemos el test esperando que este texto sea igual al subtitulo correcto
+ *
+ */

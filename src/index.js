@@ -6,7 +6,10 @@ import App from './App'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App title='Pruebas unitarias y de integración - React' />
+    <App
+      title='Pruebas unitarias y de integración - React'
+      subtitle='Jest & Enzime'
+    />
   </React.StrictMode>,
   document.getElementById('root')
 )

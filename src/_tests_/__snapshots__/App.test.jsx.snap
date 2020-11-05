@@ -15,7 +15,7 @@ exports[`Probando componente <App /> con Enzyme App debe mostrarse correctamente
     <h2
       className="subtitle"
     >
-      Jest & Enzime
+      Default Jest & Enzime
     </h2>
   </header>
   <main

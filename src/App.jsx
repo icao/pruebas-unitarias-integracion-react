@@ -35,7 +35,7 @@ App.propTypes = {
 }
 
 App.defaultProps = {
-  subtitle: 'Jest & Enzime',
+  subtitle: 'Default Jest & Enzime',
 }
 
 export default App
