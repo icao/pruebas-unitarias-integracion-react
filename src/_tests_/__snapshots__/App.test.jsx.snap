@@ -21,11 +21,6 @@ exports[`Probando componente <App /> con Enzyme App debe mostrarse correctamente
   <main
     className="app-main"
   >
-    <section>
-      <CounterApp
-        value={100}
-      />
-    </section>
     <MiPrimerComponenteTest />
   </main>
   <footer

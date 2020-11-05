@@ -98,9 +98,15 @@ const MiPrimerComponenteTest = () => {
             <span className='name-component'>{`<Counterapp />`}</span>{' '}
           </strong>{' '}
           ⇨ Prueba del componente.
-          <section>
+          <ul>
+            <li>El componente debe de mostrarse correctamente</li>
+            <li>
+              El componente debe recibir el valor 100 pasado a la prop value
+            </li>
+          </ul>
+          <>
             <CounterApp value={100} />
-          </section>
+          </>
         </li>
       </ul>
     </>
