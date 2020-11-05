@@ -77,6 +77,14 @@ const MiPrimerComponenteTest = () => {
           de el método <strong className='test-method-enzyme'>shallow()</strong>{' '}
           y <strong className='test-method-enzyme'>toMatchSnapshot()</strong>
         </li>
+        <li>
+          <strong>
+            App.test.jsx <span className='name-component'>{`<App />`}</span>{' '}
+          </strong>{' '}
+          ⇨ Prueba de las propiedades de un componente. Uso de el método{' '}
+          <strong className='test-method-enzyme'>find()</strong> y{' '}
+          <strong className='test-method-enzyme'>text()</strong>
+        </li>
       </ul>
     </>
   )
