@@ -1,4 +1,5 @@
 import React from 'react'
+import CounterApp from '../02-counter-app/CounterApp'
 
 const MiPrimerComponenteTest = () => {
   return (
@@ -55,7 +56,7 @@ const MiPrimerComponenteTest = () => {
       <h2>Pruebas sobre componentes de React</h2>
       <p>
         <strong>Nota:</strong> Revisar los test en el directorio{' '}
-        <strong>components/</strong>
+        <strong>src/</strong>
       </p>
       <ul>
         <li>
@@ -84,6 +85,22 @@ const MiPrimerComponenteTest = () => {
           ⇨ Prueba de las propiedades de un componente. Uso de el método{' '}
           <strong className='test-method-enzyme'>find()</strong> y{' '}
           <strong className='test-method-enzyme'>text()</strong>
+        </li>
+      </ul>
+      <p>
+        <strong>Nota:</strong> Revisar los test en el directorio{' '}
+        <strong>src/components/</strong>
+      </p>
+      <ul>
+        <li>
+          <strong>
+            CounterApp.test.jsx{' '}
+            <span className='name-component'>{`<Counterapp />`}</span>{' '}
+          </strong>{' '}
+          ⇨ Prueba del componente.
+          <section>
+            <CounterApp value={100} />
+          </section>
         </li>
       </ul>
     </>
