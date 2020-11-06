@@ -33,7 +33,7 @@ describe('Probando el componente <CounterApp />', () => {
   /**
    * Simulación de eventos
    */
-  test('El botón + 1 el contador debe de aumentar', () => {
+  test('El botón + 1 debe de aumentar en 1 el contador', () => {
     let wrapper = shallow(<CounterApp />)
     // Se localiza el boton y se simula un click
     wrapper.find('button').at(1).simulate('click') // [3]
@@ -54,6 +54,38 @@ describe('Probando el componente <CounterApp />', () => {
    * Seguidamente hacemos uso del método simulate([evento]), el cual recibe el evento a simular, en nuestro caso es el evento 'click', por consiguiente nuestro parametro es simulate('click')
    * Una vez hecho esto, se habrá incrementado el contador en 1, sabemos que por defaul es 10, y con el evento es ahora 11,
    * por lo que en nuestra prueba esperamos que el valor del contador sea 11
+   *
+   */
+
+  test('El botón - 1 debe de drementar en 1 el contador', () => {
+    let wrapper = shallow(<CounterApp />)
+    wrapper.find('button').at(0).simulate('click')
+    let counter = wrapper.find('h3').text().trim()
+
+    expect(counter).toBe('9')
+  })
+
+  test('El botón reset debe de colocar el valor por defento en el contador', () => {
+    let valor = 105
+    let wrapper = shallow(<CounterApp value={valor} />)
+
+    wrapper.find('button').at(1).simulate('click') // Incrementa a 106
+    wrapper.find('button').at(1).simulate('click') // Incrementa a 107
+    wrapper.find('button').at(2).simulate('click') // Asigna el valor a 105
+    // Extraemos el valor actual del contador despues de simular los eventos
+    let counter = wrapper.find('h3').text().trim() // 105
+    // Se espera que el contador actual renderizado sea igual al valor reseteado, 105
+    expect(counter).toBe(`${valor}`)
+  })
+
+  /**
+   * NOTA: Al simular varias series de eventos, modificamos el valor de nuestros elementos, en este caso el contador,
+   * asi podemos hacer una mejor simulación de la interacción dentro del componente, sin embargo, tenemos que tener mucho cuidado si es que estamos declarando nuestro componente let wrapper = shallow(<CounterApp value={valor} />)
+   * de forma global como una constante, vease el test CounterAppOptimizado.test.jsx
+   *
+   * wrapper.find('button').at(1).simulate('click') // Incrementa a 106
+   * wrapper.find('button').at(1).simulate('click') // Incrementa a 107
+   * wrapper.find('button').at(2).simulate('click') // Asigna el valor a 105
    *
    */
 })
