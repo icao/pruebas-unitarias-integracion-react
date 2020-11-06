@@ -103,10 +103,38 @@ const MiPrimerComponenteTest = () => {
             <li>
               El componente debe recibir el valor 100 pasado a la prop value
             </li>
+            <li>El botón + 1 debe de aumentar en 1 el contador</li>
+            <li>El botón - 1 debe de drementar en 1 el contador</li>
+            <li>
+              El botón reset debe de colocar el valor por defento en el contador
+            </li>
           </ul>
+          <p>
+            Uso de los métodos{' '}
+            <strong className='test-method-enzyme'>trim()</strong>,{' '}
+            <strong className='test-method-enzyme'>at()</strong> y{' '}
+            <strong className='test-method-enzyme'>simulate()</strong>
+          </p>
           <>
             <CounterApp value={100} />
           </>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <strong>
+            CounterAppOptimizado.test.jsx{' '}
+            <span className='name-component'>{`<Counterapp />`}</span>{' '}
+          </strong>{' '}
+          ⇨ Prueba del componente.
+          <ul>
+            <li>Optimizando el código repetido</li>
+            <li>Inicialización del componente en cada test</li>
+          </ul>
+          <p>
+            Uso del método{' '}
+            <strong className='test-method-enzyme'>beforeEach(fn)</strong>
+          </p>
         </li>
       </ul>
     </>
