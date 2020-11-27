@@ -1,7 +1,10 @@
 import React from 'react'
 import CounterApp from '../02-counter-app/CounterApp'
+import ShowImage from '../03-show-image/ShowImage'
 
 const MiPrimerComponenteTest = () => {
+  const urlGif = 'https://media.giphy.com/media/huJ9YLXCyzsEGp6bw8/giphy.gif'
+  const titleGif = 'Super Pibubear'
   return (
     <>
       <h2>Fundamentos de pruebas unitarias</h2>
@@ -135,6 +138,29 @@ const MiPrimerComponenteTest = () => {
             Uso del método{' '}
             <strong className='test-method-enzyme'>beforeEach(fn)</strong>
           </p>
+        </li>
+      </ul>
+      <h2>
+        Pruebas sobre componentes de React con atributos(src, alt) en etiquetas
+        de JSX({`<img>`})
+      </h2>
+      <>
+        <ShowImage url={urlGif} title={titleGif} />
+      </>
+      <p>
+        <strong>Nota:</strong> Revisar los test en el directorio{' '}
+        <strong>src/components/</strong>
+      </p>
+      <ul>
+        <li>
+          <strong>
+            ShowImage.test.jsx{' '}
+            <span className='name-component'>{`<ShowImage />`}</span>{' '}
+          </strong>{' '}
+          ⇨ Prueba del componente.
+          <ul>
+            <li>El componente debe...</li>
+          </ul>
         </li>
       </ul>
     </>
