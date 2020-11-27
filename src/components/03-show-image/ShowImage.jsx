@@ -1,5 +1,6 @@
 import React from 'react'
 import './ShowImage.scss'
+import PropTypes from 'prop-types'
 
 const ShowImage = ({ url, title }) => {
   return (
@@ -11,4 +12,8 @@ const ShowImage = ({ url, title }) => {
   )
 }
 
+ShowImage.propTypes = {
+  url: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+}
 export default ShowImage
