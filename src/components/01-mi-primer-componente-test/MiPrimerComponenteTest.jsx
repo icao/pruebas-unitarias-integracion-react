@@ -159,8 +159,23 @@ const MiPrimerComponenteTest = () => {
           </strong>{' '}
           ⇨ Prueba del componente.
           <ul>
-            <li>El componente debe...</li>
+            <li>
+              El componente debe mostrarse correctamente y aceptar las
+              propiedades url y titulo
+            </li>
+            <li>
+              El texto(titulo) renderizado debe ser el mismo a la prop titulo
+            </li>
+            <li>El atributo 'src' debe ser igual a la prop url</li>
+            <li>El atributo 'alt' igual a la prop titulo</li>
+            <li>El componente debe de tener la clase animate__fadeInDown</li>
           </ul>
+          <p>
+            Uso de los métodos{' '}
+            <strong className='test-method-enzyme'>props()</strong>,{' '}
+            <strong className='test-method-enzyme'>prop()</strong> e{' '}
+            <strong className='test-method-enzyme'>includes()</strong>
+          </p>
         </li>
       </ul>
     </>
