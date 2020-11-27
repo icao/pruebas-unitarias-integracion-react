@@ -10,6 +10,12 @@ describe('Probando el componente <ShowImage />', () => {
   test('El componente <ShowImage /> debe mostrarse correctamente y aceptar las propiedades url y titulo', () => {
     expect(wrapper).toMatchSnapshot()
   })
+
+  test('El texto(titulo) renderizado debe ser el mismo a la prop titulo', () => {
+    const texto = wrapper.find('h4').text().trim()
+    expect(texto).toBe(titulo)
+  })
+
   // TODO: El texto(titulo) renderizado debe ser el mismo a la prop titulo
   // TODO: El atributo 'src' debe ser igual a la prop url, y el 'atl' igual a la prop titulo
 })
