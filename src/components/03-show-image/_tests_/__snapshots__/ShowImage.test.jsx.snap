@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Probando el componente <ShowImage /> El componente <ShowImage /> debe mostrarse correctamente y aceptar las propiedades url y titulo 1`] = `
+<div
+  className="card animate__animated animate__fadeInDown"
+>
+  <h3>
+    Consumiendo API Giphy - Gif Random
+  </h3>
+  <img
+    alt="Super Pibu"
+    className="card__image"
+    src="https://media.giphy.com/media/d8j1B7L3sLmO6rdFAA/giphy.gif"
+  />
+  <h4>
+    Super Pibu
+  </h4>
+</div>
+`;
